@@ -8,16 +8,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 public class BaseTest
 {
   private static WebDriver driver;
 
-  @BeforeMethod
+  @BeforeTest
   public void launchApp() {
     // Set the path to the ChromeDriver executable (replace with your path)
-    System.setProperty("webdriver.chrome.driver", "C:\\myproject\\src\\main\\resources\\driver\\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver", "C:\\MyNewTestAutomationFrameworkPOM\\MyNewTestProject\\src\\test"
+        + "\\resources\\driver\\chromedriver.exe");
 
     // Initialize the WebDriver (Browser)
     this.driver = new ChromeDriver();
@@ -30,7 +33,7 @@ public class BaseTest
 
   }
 
-  @AfterMethod
+  @AfterTest
   public void quitBrowser(){
     // Close the browser
    driver.quit();

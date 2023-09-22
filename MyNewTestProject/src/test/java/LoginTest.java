@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest
 {
-  @Test
+  @Test(groups = "fun")
   public void testSuccessfullLogin(){
     new HomePage(getDriver())
         .stepClickAuthentication()

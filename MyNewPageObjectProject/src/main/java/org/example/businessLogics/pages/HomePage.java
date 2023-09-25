@@ -28,6 +28,12 @@ public class HomePage extends BasePage
     return new DropDownPage(driver);
   }
 
+  public HoversPage stepClickHovers(){
+    stepclickLink("Hovers");
+    System.out.println("Clicking on the Hovers link in the main page");
+    return new HoversPage(driver);
+  }
+
   private void stepclickLink(String text){
     findElement(By.linkText(text)).click();
   }

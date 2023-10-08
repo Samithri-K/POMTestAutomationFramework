@@ -34,6 +34,13 @@ public class HomePage extends BasePage
     return new HoversPage(driver);
   }
 
+  public DynamicLoadingPage stepClickDynamicLoading(){
+    stepclickLink("Dynamic Loading");
+    System.out.println("Clicking on the Dynamic Loading link in the main page");
+    return new DynamicLoadingPage(driver);
+  }
+
+
   private void stepclickLink(String text){
     findElement(By.linkText(text)).click();
   }

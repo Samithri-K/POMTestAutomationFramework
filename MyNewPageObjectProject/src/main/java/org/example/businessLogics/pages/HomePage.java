@@ -40,6 +40,11 @@ public class HomePage extends BasePage
     return new DynamicLoadingPage(driver);
   }
 
+  public WYSIWYGPage stepClickWISIWYG(){
+    stepclickLink("WYSIWYG Editor");
+    System.out.println("Clicking on WYSIWYG Editor link in the main page");
+    return new WYSIWYGPage(driver);
+  }
 
   private void stepclickLink(String text){
     findElement(By.linkText(text)).click();

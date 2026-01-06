@@ -6,7 +6,7 @@ The framework follows the Page Object Model (POM) design pattern to ensure maint
 
 It is suitable for both real-world enterprise projects and learning purposes.
 
-🚀## Key Features
+🚀Key Features
 
 Page Object Model (POM) based architecture
 

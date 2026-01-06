@@ -99,6 +99,3 @@ Scalability: Easy to add new tests and pages
 
 Readability: Clean, well-structured code
 
-
-
-Interview and portfolio showcase

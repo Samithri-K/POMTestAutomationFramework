@@ -1,4 +1,4 @@
-Selenium Automation Framework (Java)
+# Sellenium_automation_framework
 📌 Overview
 
 This repository contains a scalable Selenium test automation framework designed using Java, Selenium WebDriver, TestNG, and Maven.
@@ -6,7 +6,7 @@ The framework follows the Page Object Model (POM) design pattern to ensure maint
 
 It is suitable for both real-world enterprise projects and learning purposes.
 
-🚀 Key Features
+🚀## Key Features
 
 Page Object Model (POM) based architecture
 
